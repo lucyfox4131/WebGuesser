@@ -17,15 +17,15 @@ def check_guess(guess)
   elsif guess < SECRET_NUMBER
     guess < SECRET_NUMBER - 5 ? "Way too low!" : "Too low!"
   else
-    "You got it right! The secret number was #{SECRET_NUMBER}"
+    "You got it right! The secret number was #{SECRET_NUMBER}."
   end
 end
 
 def get_color(guess)
   if guess > SECRET_NUMBER
-    guess > SECRET_NUMBER + 5 ? "red" : "IndianRed"
+    guess > SECRET_NUMBER + 5 ? "red" : "indianred"
   elsif guess < SECRET_NUMBER
-    guess < SECRET_NUMBER - 5 ? "red" : "IndianRed"
+    guess < SECRET_NUMBER - 5 ? "red" : "indianred"
   else
     "green"
   end
